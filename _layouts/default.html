@@ -198,5 +198,8 @@ layout: table_wrappers
       <div class="search-overlay"></div>
     {% endif %}
   </div>
+{% if site.plausible_domain %}
+<script defer data-domain="{{ site.plausible_domain }}" src="{{ site.plausible_script | default: 'https://plausible.io/js/plausible.js' }}"></script>
+{% endif %}
 </body>
 </html>
