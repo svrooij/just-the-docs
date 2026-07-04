@@ -248,6 +248,21 @@ This theme supports multiple comma-separated tracking IDs. This helps seamlessly
 ga_tracking: "UA-1234567-89,G-1AB234CDE5"
 ```
 
+## Plausible Analytics
+
+[Plausible](https://plausible.io) is a privacy-friendly, open-source analytics tool. To enable it, set `plausible_domain` in `_config.yml`:
+
+```yaml
+plausible_domain: your-site.com
+```
+
+By default the script is loaded from `https://plausible.io/js/script.js`. You can override this to use a self-hosted instance or a different script variant:
+
+```yaml
+plausible_domain: your-site.com
+plausible_script: https://plausible.example.com/js/script.js
+```
+
 ## Document collections
 
 By default, the navigation and search include normal [pages](https://jekyllrb.com/docs/pages/).

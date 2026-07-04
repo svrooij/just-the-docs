@@ -43,5 +43,8 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
+  {% if site.plausible_domain %}
+    <script defer data-domain="{{ site.plausible_domain }}" src="{{ site.plausible_script | default: 'https://plausible.io/js/script.js' }}"></script>
+  {% endif %}
 </body>
 </html>
