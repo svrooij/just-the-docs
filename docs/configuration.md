@@ -263,6 +263,9 @@ plausible_domain: your-site.com
 plausible_script: https://plausible.example.com/js/script.js
 ```
 
+{: .warning }
+> Only set `plausible_script` to URLs from trusted sources. The value is rendered directly as a script `src` attribute.
+
 ## Document collections
 
 By default, the navigation and search include normal [pages](https://jekyllrb.com/docs/pages/).
